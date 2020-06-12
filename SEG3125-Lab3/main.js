@@ -88,7 +88,7 @@ function populateListProductChoices(slct1, slct2) {
 
 		var checkbox = document.createElement("input");
 
-		checkbox.type = "button";
+		checkbox.type = "image";
 
 		checkbox.name = "product";
 

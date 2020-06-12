@@ -12,6 +12,13 @@ div.transbox{
 	opacity: 0.8;
 }
 
+img{
+  width: 200px;
+  height: 200px;
+  padding: 50px;
+  background-color: black;
+}
+
 footer{
   margin-top: 800px;
 	font-style: italic;
