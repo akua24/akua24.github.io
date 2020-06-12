@@ -1,0 +1,130 @@
+<!--
+CREATED BY: Ewurakua Odei-Wontumi
+			University of Ottawa
+-->
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<!-- This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp-->
+
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<title>Everyday Mart</title>
+
+</head>
+
+
+
+<body >
+
+	<div class="transbox">
+
+		<h1 style="text-align: center;">Welcome to Everyday Mart!</h1>
+		<h3 style="font-family: Calibri; text-align: center;">Shop for groceries at your convenience</h3>
+
+	</div>
+		<!-- Tab links, each one with an onclick event associated with it -->
+
+		<div class="tab">
+
+		  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+
+		  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+
+		  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+
+		</div>
+
+
+
+		<!-- Tab content -->
+		<div class="transbox">
+
+			<div id="Client" class="tabcontent">
+
+			  <h3>Client Information</h3>
+
+			  <p>Tell us a bit about yourself.</p>
+
+				Select a Dietary Restriction:
+
+				<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+
+				<option value=""></option>
+
+				<option value="Vegetarian">Vegetarian</option>
+
+			    <option value="GlutenFree">GlutenFree</option>
+
+			    <option value="Organic">Organic</option>
+
+			    <option value="No Preference">No Preference</option>
+
+				</select>
+
+				<!-- <div id="displayProduct"></div> -->
+
+			</div>
+
+
+			<div id="Products" class="tabcontent">
+
+				<h3>Your targeted products</h3>
+
+				<p>These products were picked according to your preferences.</p>
+
+				Choose items to buy:<br>
+
+				<div id="displayProduct">
+
+					<img id="broccoli" src="broccoli.jpg" alt="" /><!--https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.health.harvard.edu%2Fheart-health%2Fvegetable-of-the-month-broccoli&psig=AOvVaw144vyhp42IJAMUWmFI1p--&ust=1591843207592000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCLsJ2c9ukCFQAAAAAdAAAAABAD-->
+					<img id="item2" src="broccoli.jpg" alt="" />
+					<img id="item3" src="broccoli.jpg" alt="" />
+					<img id="item4" src="broccoli.jpg" alt="" />
+					<img id="item5" src="broccoli.jpg" alt="" />
+					<img id="item6" src="broccoli.jpg" alt="" />
+
+				</div>
+
+				<br><button id="addCart" type="button" class="block" onclick="selectedItems()">
+
+					Add selected items to cart.
+
+				</button>
+
+			</div>
+
+
+
+			<div id="Cart" class="tabcontent">
+
+			  <h3>Cart</h3>
+
+			  <p>Your Shopping Cart.</p>
+
+			  <div id="displayCart"></div>
+
+			</div>
+
+
+			<br>
+			<br><footer >Website designed by Ewurakua Odei-Wontumi</footer>
+			<br><br>
+
+		</div>
+
+
+
+		<script src="groceries.js"></script>
+
+		<script src="main.js"></script>
+
+	<!--</div>-->
+
+</body>
+
+</html>
