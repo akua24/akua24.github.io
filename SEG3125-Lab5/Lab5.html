@@ -8,6 +8,7 @@
 <!-- girl.jpg https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.canstockphoto.com%2Fhairdresser-making-a-haircut-to-a-young-56466003.html&psig=AOvVaw0Xe1fClKUL9bVvwvh0M9Ei&ust=1592449879962000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMC23aHwh-oCFQAAAAAdAAAAABAI-->
 <!--monic.png taken from https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fillustrations%2Fsalon-hair-stylist-5331382%2F&psig=AOvVaw0pS-KCJWyc1QaB0zQPc7_k&ust=1593041512110000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCFtb-MmeoCFQAAAAAdAAAAABAE-->
 <!--logo.jpg taken from https://www.naturallycurly.com/curlreading/lifestyle/natural-hair-art-we-love-->
+<!--images in services offered taken from https://www.cleanpng.com/-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +25,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
 
-    <!-- Your own additional style sheet -->
+    <!-- My style sheet -->
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -64,7 +65,7 @@
     <!-- Might be (or not) useful to show some information to the user -->
     <div class="container">
         <h2 class="text-center">Services Offered</h2>
-        <p class="text-center">Here is a list of services we offer</p>            
+        <p class="text-center">We are able to deal with different hair types and textures. </p>            
         <table class="table table-primary table-hover">
             <thead class="bg-primary">
             <tr>
@@ -74,16 +75,20 @@
             </thead>
             <tbody class="table-light">
             <tr>
-                <td>Haircut</td>
-                <td>We cut whatever length needed</td>
+                <td>Hair Styling</td>
+                <td>Variety of hairstyles provided.<br> <img src="styling.jpg"><img src=" straight.jpg"><img src="afro.jpg" height="190px"></img></td>
             </tr>
             <tr>
-                <td>Drying</td>
-                <td>Blow drying sevices available</td>
+                <td>Cutting/Trim</td>
+                <td>We cut hair to any requested length.<br><img src="haircut.jpg"></td>
+            </tr>
+            <tr>
+                <td>Wash and Blow Dry</td>
+                <td>Washing and blow drying services available.<br><img src="wash.jpg"><img src="https://img.icons8.com/ios/50/000000/hair-dryer.png"/></td>
             </tr>
             <tr>
                 <td>Coloring</td>
-                <td>We bleach color, etc.</td>
+                <td>We offer bleaching services, coloring, toning, etc.<br><img src="coloring.jpg"></td>
             </tr>
             </tbody>
         </table>
@@ -105,7 +110,7 @@
     <!-- Here the modal is used for a little survey -->
     <div class="container">
         <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySurvey">Open survey to find your Perfect Stylist</button>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySurvey">Take survey to find your Perfect Stylist</button>
           
         <!-- Modal -->
         <div class="modal fade" id="mySurvey" role="dialog">
@@ -222,16 +227,16 @@
     <!-- could work well.  You can use other patterns too.  This is just an example. -->
     <div class="container">
         <div id="accordion">
+            <form>
             <div class="card">
                 <div class="card-header">
                     <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
                 </div>
                 <div id="collapseService" class="collapse show" data-parent="#accordion">
-                    <div class="card-body">
-                        <p>Hair Styling</p>
-                        <p>Coloring</p>
-                        <p>Cutting/Trim</p>
-                        <p>Wash and Blow Dry</p>
+                    <div class="card-body">              
+
+                        <pre><div class="checkbox"><label><input type="checkbox" value=""> Hair Styling         $30</label></div><div class="checkbox"><label><input type="checkbox" value=""> Coloring             $35</label></div><div class="checkbox"><label><input type="checkbox" value=""> Cutting/Trim         $25 per adult, $10 per child (under 12)</label></div><div class="checkbox"><label><input type="checkbox" value=""> Wash and Blow Dry    $20</label></div></pre>
+
                     </div>
                 </div>
             <div class="card">
@@ -262,6 +267,8 @@
                     </div>
                 </div>
             </div>
+            <button type="submit" class="btn btn-primary" >Submit</button>
+        </form>
         </div>
     </div>
     <br><footer >Website designed by Ewurakua Odei-Wontumi</footer>
