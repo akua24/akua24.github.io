@@ -25,6 +25,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
 
+    <script>
+        $(document).ready(function(){
+          $("form").submit(function(){
+            alert("Your information was received");
+          });
+          $("button").click(function(){
+            $("form").submit();
+          });  
+        });
+    </script>
     <!-- My style sheet -->
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
@@ -227,7 +237,7 @@
     <!-- could work well.  You can use other patterns too.  This is just an example. -->
     <div class="container">
         <div id="accordion">
-            <form>
+            <form action="">
             <div class="card">
                 <div class="card-header">
                     <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
@@ -262,13 +272,15 @@
                 </div>
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Enter your Name: <textarea rows="1" cols="50" style="border-color:darkviolet; font-size:16px;"></textarea><br></p>
-                        <p>Enter your email and/or phone number: <textarea rows="1" cols="50" style="border-color:darkviolet; font-size:16px;"></textarea><br></p>
+                        <p>Enter your Name: <input type="text"></input><br></p>
+                        <!--code inspired from https://bootstrapformhelpers.com/phone/-->
+                        <p>Enter your email and/or phone number: <input type="text" class="form-control bfh-phone" value="(555)555-5555" data-format="+1 (ddd) ddd-dddd"><br></p>
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary" >Submit</button>
+            
         </form>
+        <button type="submit" class="btn btn-primary" >Submit</button>
         </div>
     </div>
     <br><footer >Website designed by Ewurakua Odei-Wontumi</footer>
