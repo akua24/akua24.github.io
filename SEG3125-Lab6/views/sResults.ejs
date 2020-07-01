@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title> Survey Results</title>
+		<link rel="stylesheet" type="text/css" href="assets/styles.css">
+	</head>
+
+	<body>
+		<h2>Age</h2>
+		<ul>
+		<% for (var i=0; i<results[0].length; i++){ %>
+			<li><%= results[0][i].age %> :  <%= results[0][i].count %></li>
+		<% } %>    
+		</ul>
+
+		<h2>Checkout</h2>
+		<ul>
+		<% for (var i=0; i<results[1].length; i++){ %>
+			<li><%= results[1][i].checkout %> :  <%= results[1][i].count %></li>
+		<% } %>    
+		</ul>
+
+		<h2>Features</h2>
+		<ul>
+		<% for (var i=0; i<results[2].length; i++){ %>
+			<li><%= results[2][i].features %> :  <%= results[2][i].count %></li>
+		<% } %>    
+		</ul>
+
+		<h2>LikedOrNot</h2>
+		<ul>
+		<% for (var i=0; i<results[2].length; i++){ %>
+			<li><%= results[2][i].likedOrNot %> :  <%= results[2][i].count %></li>
+		<% } %>    
+		</ul>
+
+		<h2>MostDisliked</h2>
+		<ul>
+		<% for (var i=0; i<results[2].length; i++){ %>
+			<li><%= results[2][i].mostDisliked %> :  <%= results[2][i].count %></li>
+		<% } %>    
+		</ul>
+
+		<h2>PostCode</h2>
+		<ul>
+		<% for (var i=0; i<results[2].length; i++){ %>
+			<li><%= results[2][i].postCode %> :  <%= results[2][i].count %></li>
+		<% } %>    
+		</ul>
+
+		<h2>ShopOften</h2>
+		<ul>
+		<% for (var i=0; i<results[2].length; i++){ %>
+			<li><%= results[2][i].shopOften %> :  <%= results[2][i].count %></li>
+		<% } %>    
+		</ul>
+
+		
+
+	</body>
+</html>
+    

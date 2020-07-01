@@ -1,0 +1,54 @@
+body{
+	background: linear-gradient(to bottom left, #993399 16%, #33ccff 100%);
+	text-align: center; 
+	font-family: georgia;
+}
+img{
+	width:350px; 
+	height:270px;
+    padding:inherit;
+}
+a{
+	color:midnightblue; 
+}
+
+pre {
+    font-size:16px;
+}
+
+.mainform{
+	text-align: left;
+	margin-left: 110px; 
+	margin-right: 310px;
+	font-family: georgia;
+}
+
+.eachQuestion{
+	font-style: italic;
+	font-size: 18px;
+}
+
+.givenOptions {
+    font-size: 16px;
+    margin-left: 100px;
+}
+
+#submitButton{
+	background-color: darkviolet; 
+	color: white; 
+	font-size: 20px; 
+	font-family: georgia;
+	text-align: center;
+	border-color: darkviolet; 
+	width: 300px;
+	margin-left: 180px;
+}
+
+footer{
+	font-style: italic;
+	font-size: 15px;
+	color: #800000;
+	text-align: right;
+    padding-right:20px;
+}
+
