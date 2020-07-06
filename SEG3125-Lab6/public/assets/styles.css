@@ -3,6 +3,13 @@ body{
 	text-align: center; 
 	font-family: georgia;
 }
+
+/*/#gradient {
+    height: 2000px;
+    background-color: mediumpurple; /* For browsers that do not support gradients */
+    /*background-image: linear-gradient(to bottom right, purple, mediumpurple); /* Standard syntax (must be last) */
+/*}*/
+
 img{
 	width:350px; 
 	height:270px;
