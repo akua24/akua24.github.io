@@ -1,0 +1,289 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+
+<!-- source code borrowed from https://github.com/carolinebarriere/carolinebarriere.github.io/tree/master/SEG3125-Module4-Service -->
+<!-- Images source: -->
+<!-- dude.jpg taken from https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bigstockphoto.com%2Fimage-315095959%2Fstock-vector-a-young-guy-a-professional-hairdresser-hairdresser-in-the-workplace%252C-holding-a-pair-of-scissors-li&psig=AOvVaw0Xe1fClKUL9bVvwvh0M9Ei&ust=1592449879962000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMC23aHwh-oCFQAAAAAdAAAAABAO -->
+<!-- girl.jpg https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.canstockphoto.com%2Fhairdresser-making-a-haircut-to-a-young-56466003.html&psig=AOvVaw0Xe1fClKUL9bVvwvh0M9Ei&ust=1592449879962000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMC23aHwh-oCFQAAAAAdAAAAABAI-->
+<!--monic.png taken from https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fillustrations%2Fsalon-hair-stylist-5331382%2F&psig=AOvVaw0pS-KCJWyc1QaB0zQPc7_k&ust=1593041512110000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCFtb-MmeoCFQAAAAAdAAAAABAE-->
+<!--logo.jpg taken from https://www.naturallycurly.com/curlreading/lifestyle/natural-hair-art-we-love-->
+<!--images in services offered taken from https://www.cleanpng.com/-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Kulture Salon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <script>
+        $(document).ready(function(){
+          $("form").submit(function(){
+            alert("Your information was received");
+          });
+          $("button").click(function(){
+            $("form").submit();
+          });  
+        });
+    </script>
+    <!-- My style sheet -->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body style="background-color: lightgrey;">
+
+    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+    <div class="container-md p-3 my-3 border bg-dark text-white text-center">
+        <h1>Welcome to Kulture Salon</h1>
+        <p>We're here for all your hair needs!</p>
+        <img src="logo.jpg" title="logo"><meta content="width=device-width, initial-scale=1"></img>
+    </div>
+
+    <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
+    <!-- It can be useful for placement of information -->
+    <div class="row p-3 text-center">
+        <div class="col-sm-3 pl-5" title="View our Services">Our Services</div>
+        <div class="col-sm-3">Calendar</div>
+        <div class="col-sm-3">Payment</div>
+        <div class="col-sm-3">Where to find us</div>
+    </div>
+
+    <!-- When you have messages to tell, remember that center align is not always the best choice -->
+    <div class="container p-3 my-3 border bg-light text-success bg-primary">
+        <h3 class="text-center">Our Expertise</h3>
+        <pre><p class="text-center">We have highly-trained employees who are able to provide whatever hair style 
+        you need. Trained with different tools and hair types, they adapt 
+    very quickly to satisfy you hair needs.</p></pre>
+    </div>
+
+
+    <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+    <!-- Might be (or not) useful to show some information to the user -->
+    <div class="container">
+        <h2 class="text-center">Services Offered</h2>
+        <p class="text-center">We are able to deal with different hair types and textures. </p>            
+        <table class="table table-primary table-hover">
+            <thead class="bg-primary">
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody class="table-light">
+            <tr>
+                <td>Hair Styling</td>
+                <td>Variety of hairstyles provided.<br> <img src="styling.jpg"><img src=" straight.jpg"><img src="afro.jpg" height="190px"></img></td>
+            </tr>
+            <tr>
+                <td>Cutting/Trim</td>
+                <td>We cut hair to any requested length.<br><img src="haircut.jpg"></td>
+            </tr>
+            <tr>
+                <td>Wash and Blow Dry</td>
+                <td>Washing and blow drying services available.<br><img src="wash.jpg"><img src="https://img.icons8.com/ios/50/000000/hair-dryer.png"/></td>
+            </tr>
+            <tr>
+                <td>Coloring</td>
+                <td>We offer bleaching services, coloring, toning, etc.<br><img src="coloring.jpg"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
+    <!-- These can be useful for making sure someone reads something before continuing -->
+    
+
+    <!-- You'll certainly need buttons at some point in your site -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp -->
+    <!-- Remember how we talked about choosing a hue and changing the saturation for active/inactive -->
+    <!-- This idea is already part of the components in Bootstrap -->
+   
+
+    <!-- Including a modal https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
+    <!-- Modals are useful for additional information or questions -->
+    <!-- Here the modal is used for a little survey -->
+    <div class="container">
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySurvey">Take survey to find your Perfect Stylist</button>
+          
+        <!-- Modal -->
+        <div class="modal fade" id="mySurvey" role="dialog">
+            <div class="modal-dialog">  
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h4>How did you hear about us?</h4>
+                        <form>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">Word of Mouth</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">Online Search</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">Paper Media (Magazine, Flyer, etc.)</label>
+                          </div>
+                        <h4>What is your hair type?</h4>
+                            <div class="checkbox">
+                                <label><input type="radio" value="">Straight</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="radio" value="">Medium Curly or Thick Straight</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="radio" value="">Thick-Coarse Curly</label>
+                            </div>
+                        <h4>What are you looking to do today?</h4>
+                            <div class="checkbox">
+                                <label><input type="radio" value="">Wash and Blow Dry</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="radio" value="">Hair Styling</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="radio" value="">Hair Coloring</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="radio" value="">Cut/Trim</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="radio" value="">Other: </label><textarea rows="1" cols="50" style="border-color:darkviolet; font-size:16px;"></textarea><br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>     
+        </div>
+        </div>    
+    </div>
+
+    <!-- Presenting the staff with cards: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <!-- Card columns allows multiple cards next to each other -->
+    <!-- The first card's button doesn't go anywhere, it could be a modal --> 
+    <!-- My second card limits the information seen and uses collapsible to show more -->
+    <div class="container p-3">
+        <h2>Meet our hairdressers</h2>
+        <div class="card-columns">
+            <div class="card bg-success" style="width:200px">
+                <img class="card-img-top" src="dude.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Major</h4>
+                    <p class="card-text">Major has been specialising in hair dressing for years.</p>
+                    <a href="#profile" class="btn btn-primary" data-toggle="collapse">Areas of Expertise</a>
+                    <div id="profile" class="collapse p-3 text-light">
+                        <p> Men, Women and Children Cuts<br/> Blow Drying and Styling<br/> Hair Coloring<br/> Straightening and Curling</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-success" style="width:200px">
+                <img class="card-img-top" src="girl.jpg" alt="Card image" style="width:100%; ">
+                <div class="card-body">
+                    <h4 class="card-title">Blaire</h4>
+                    <p class="card-text">The curly hair specialist. Can tackle any given hair type or texture.</p>
+                    <!-- collapsible part -->
+                    <a href="#profile" class="btn btn-primary" data-toggle="collapse">Areas of Expertise</a>
+                    <div id="profile" class="collapse p-3 text-light">
+                        <p>> Men, Women and Children Cuts<br>> Blow Drying and Styling<br>> Braids<br>> Wig Attachments</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-success" style="width:200px">
+                <img class="card-img-top" src="monic.png" alt="Card image" style="width:100%; ">
+                <div class="card-body">
+                    <h4 class="card-title">Monique</h4>
+                    <p class="card-text">Her hair styling is as unique as her name.</p>
+                    <!-- collapsible part -->
+                    <a href="#profile" class="btn btn-primary" data-toggle="collapse">Areas of Expertise</a>
+                    <div id="profile" class="collapse p-3 text-light">
+                        <p>> Straightening and Curling<br>> Blow Drying and Styling<br>> Braids<br>> Wig Attachments and Extensions<br>> Hair Coloring</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- A different approach would be to make the whole staff information collapsible -->
+    <!-- Here a block button (taking the full width) opens/closes the collapsible -->
+    <!-- Here a single card is used, but card columns could be used -->
+    
+
+    <!-- Collapsible with multiple items - accordion -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+    <!-- could work well.  You can use other patterns too.  This is just an example. -->
+    <div class="container">
+        <div id="accordion">
+            <form action="">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">              
+
+                        <pre><div class="checkbox"><label><input type="checkbox" value=""> Hair Styling         $30</label></div><div class="checkbox"><label><input type="checkbox" value=""> Coloring             $35</label></div><div class="checkbox"><label><input type="checkbox" value=""> Cutting/Trim         $25 per adult, $10 per child (under 12)</label></div><div class="checkbox"><label><input type="checkbox" value=""> Wash and Blow Dry    $20</label></div></pre>
+
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Book an appointment today!</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <!-- Bootstrap has various input components. Some examples are given here: -->
+                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Select a Date and time</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Enter your Name: <input type="text"></input><br></p>
+                        <!--code inspired from https://bootstrapformhelpers.com/phone/-->
+                        <p>Enter your email and/or phone number: <input type="text" class="form-control bfh-phone" value="(555)555-5555" data-format="+1 (ddd) ddd-dddd"><br></p>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+        <button type="submit" class="btn btn-primary" >Submit</button>
+        </div>
+    </div>
+    <br><footer >Website designed by Ewurakua Odei-Wontumi</footer>
+
+</body>
+</html>

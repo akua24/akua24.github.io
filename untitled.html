@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-wodth, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+
+    <!--babel code for broser to understand JSX-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!--core react library, and its dummy to help render compnents to the DOM-->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <title>Kulture Salon</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+        class App extends React.Component {
+	        state = {
+	        	name: "Ryu",
+	        	age: "30"
+	    	}
+
+	    	// handleClick = (e) => {
+            //     this.setState({
+            //         name: "Sarah",
+            //         age: 90
+            //     });
+	    	// 	console.log(this.state);
+	    	// }
+	    	// handleCopy(e){
+	    	// 	console.log("Hello there!")
+            // }
+            handleChange(e){
+                this.setState({
+                    // name gets the value of inputted text
+                    name: e.target.value
+                });
+            }
+            handleSubmit(e){
+                e.preventDefault();
+                console.log("Form submitted",this.state.name);
+            }
+
+            render() {
+                return (
+                    <div className="app-content">
+                        <h1>My name is {this.state.name}</h1>
+                        <form onSubmit={this.handleSubmit}>
+                            <input type ="text" onChange={this.handleChange}/>
+                            <button>Submit</button>
+                        </form>
+                        
+                    </div>
+                )
+            }
+        }
+
+        ReactDOM.render(<App />, document.getElementById("app"));
+    </script>
+</body>
+</html>
