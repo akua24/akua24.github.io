@@ -7,7 +7,7 @@ import monic from '../SEG/monic.png'
 
 const Home = () =>{
     return(
-        <div className="container">
+        <div className="container center p-3 my-3 border bg-light text-primary bg-primary">
             <h4 className="center"></h4>
 
             <div className="container p-3 my-3 border bg-light text-success bg-primary">
@@ -17,11 +17,11 @@ const Home = () =>{
         very quickly to satisfy you hair needs.</p>
             </div> 
 
-            <div className="container center p-3 my-3 border bg-light text-primary bg-primary">
+            <div className="container ">
                 <h3 class="text-success">Meet Our Hairdressers</h3>
                 
                 <CardColumns>
-                <Card style={{ width: '18rem' }}>
+                <Card border="info" style={{ width: '18rem' }}>
                 <Card.Img variant="top" style={{height: "230px"}} src={dude} />
                 <Card.Body >
                     <Card.Title>Major</Card.Title>
@@ -29,7 +29,7 @@ const Home = () =>{
                     Major has been specialising in hair dressing for years.
                     </Card.Text>
                 </Card.Body>
-                <ListGroup className="list-group-flush">
+                <ListGroup className="list-group-hover">
                     <ListGroupItem>Men, Women and Children Cuts</ListGroupItem>
                     <ListGroupItem>Blow Drying and Styling</ListGroupItem>
                     <ListGroupItem>Hair Coloring</ListGroupItem>
@@ -37,7 +37,7 @@ const Home = () =>{
                 </ListGroup>
                 </Card>
 
-                <Card style={{ width: '18rem' }}>
+                <Card border="info" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={girl} />
                 <Card.Body style={{text: "blue"}}>
                     <Card.Title>Blaire</Card.Title>
@@ -53,7 +53,7 @@ const Home = () =>{
                 </ListGroup>
                 </Card>
 
-                <Card style={{ width: '18rem' }}>
+                <Card border="info" style={{ width: '18rem' }}>
                 <Card.Img variant="top" style={{height: "230px"}} src={monic} />
                 <Card.Body style={{text: "blue"}}>
                     <Card.Title>Monique</Card.Title>

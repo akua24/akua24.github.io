@@ -21,19 +21,19 @@ const Services = () =>{
                 <tbody class="table-light">
                 <tr>
                     <td>Hair Styling</td>
-                    <td>Variety of hairstyles provided.<br/> <img alt="styling" src={styling}/><br/><img alt="straight" src={straight}/><br/><img alt="afro" src={afro} height="190px"/></td>
+                    <td>Variety of hairstyles provided.<br/> <img alt="styling" height="100px" src={styling}/><img alt="straight" height="100px" src={straight}/><img alt="afro" src={afro} height="100px"/></td>
                 </tr>
                 <tr>
                     <td>Cutting/Trim</td>
-                    <td>We cut hair to any requested length.<br/><img alt="haircut" src={haircut}/></td>
+                    <td>We cut hair to any requested length.<br/><img alt="haircut" height="100px" src={haircut}/></td>
                 </tr>
                 <tr>
                     <td>Wash and Blow Dry</td>
-                    <td>Washing and blow drying services available.<br/><img src={wash}/><img src="https://img.icons8.com/ios/50/000000/hair-dryer.png"/></td>
+                    <td>Washing and blow drying services available.<br/><img height="100px" src={wash}/><img width="80px" src="https://img.icons8.com/ios/50/000000/hair-dryer.png"/></td>
                 </tr>
                 <tr>
                     <td>Coloring</td>
-                    <td>We offer bleaching services, coloring, toning, etc.<br/><img src={coloring}/></td>
+                    <td>We offer bleaching services, coloring, toning, etc.<br/><img height="100px" src={coloring}/></td>
                 </tr>
                 </tbody>
             </table>

@@ -21,7 +21,7 @@ class App extends React.Component{
         {/* <div class="container-md p-3 my-3 bg-dark text-white text-center">  */}
           <h1>Welcome to Kulture Salon</h1>
           <p>We're here for all your hair needs!</p>
-          <img src={logo} title="Home" initial-scale="1"/>
+          <a href="./home" ><img src={logo} title="Home" style={{width: "900px", height:"400px"}} initial-scale="1"/></a>
 
           <NavBar/> 
           <Route path="/Home" component={Home}/>
