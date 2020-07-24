@@ -12,9 +12,9 @@ const Home = () =>{
 
             <div className="container p-3 my-3 border bg-light text-success bg-primary">
             <h3 class="text-center">Our Expertise</h3>
-            <p class="text-center text-primary">We have highly-trained employees who are able to provide whatever hair style 
+            <h6 class="text-center text-primary">We have highly-trained employees who are able to provide whatever hair style 
             you need. Trained with different tools and hair types, they adapt 
-        very quickly to satisfy you hair needs.</p>
+        very quickly to satisfy you hair needs.</h6>
             </div> 
 
             <div className="container ">

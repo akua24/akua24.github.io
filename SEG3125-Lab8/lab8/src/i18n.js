@@ -18,9 +18,9 @@ i18n.use(LanguageDetector).init({
         "Flexibility to use other packages": "Flexibility to use other packages"
       }
     },
-    jap: {
+    fr: {
       translations: {
-        Introduction: "前書き",
+        OurExpertise: "前書き",
         "is an internationalization-framework which offers a complete solution to localize your product from web to mobile and desktop":
           "Webからモバイルとデスクトップに製品をローカライズするための完全なソリューションを提供する国際化フレームワークです",
         "Plugins to detect the user language":
@@ -32,9 +32,9 @@ i18n.use(LanguageDetector).init({
       }
     },
 
-    hin: {
+    spa: {
       translations: {
-        Introduction: "प्रस्तावना",
+        OurExpertise: "प्रस्तावना",
         "is an internationalization-framework which offers a complete solution to localize your product from web to mobile and desktop":
           "एक अंतर्राष्ट्रीयकरण - ढांचा है जो आपके उत्पाद को वेब से मोबाइल और डेस्कटॉप पर स्थानांतरित करने का एक संपूर्ण समाधान प्रदान करता है",
         "Plugins to detect the user language":
@@ -45,7 +45,8 @@ i18n.use(LanguageDetector).init({
         "Flexibility to use other packages":
           "अन्य पैकेजों का उपयोग करने के लिए लचीलापन"
       }
-    },
+    }
+},
 
     fallbackLng: "en",
     debug: true,
@@ -59,7 +60,14 @@ i18n.use(LanguageDetector).init({
     interpolation: {
         escapeValue: false, // not needed for react!!
         formatSeparator: ","
-  }
-}
-}
-)
+    },
+
+    react: {
+        wait: true
+    }
+
+    }
+
+);
+
+export default i18n;
