@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom'
 
 const NavBar = () => {
     return(
-        <nav className="nav-wrapper blue">
-            <div className="container ">
+        <nav  className="nav-wrapper blue">
+            <div style={{flexDirection:"row"}} className="container ">
                 <ul className="right">
                     <li><Link to="/home">Home</Link></li>
                     <li><Link to="/services">Our Services</Link></li>

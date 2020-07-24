@@ -72,44 +72,7 @@ const Home = () =>{
 
             </div>
             
-            {/*<div className="container p-3">
-                <h2>Meet our hairdressers</h2>
-                <div className="card-columns">
-                    <div className="card bg-success" style="width:200px">
-                        <img className="card-img-top" src={dude} alt="Card image" style="width:100%"/>
-                        <div className="card-body">
-                            <h4 class="card-title">Major</h4>
-                            <p class="card-text">Major has been specialising in hair dressing for years.</p>
-                            <a href="#profile" class="btn btn-primary" data-toggle="collapse">Areas of Expertise</a>
-                            <div id="profile" className="collapse p-3 text-light">
-                                <p> Men, Women and Children Cuts<br/> Blow Drying and Styling<br/> Hair Coloring<br/> Straightening and Curling</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card bg-success" style="width:200px">
-                        <img class="card-img-top" src={girl} alt="Card image" style="width:100%; "/>
-                        <div class="card-body">
-                            <h4 class="card-title">Blaire</h4>
-                            <p class="card-text">The curly hair specialist. Can tackle any given hair type or texture.</p>
-                            <a href="#profile" class="btn btn-primary" data-toggle="collapse">Areas of Expertise</a>
-                            <div id="profile" class="collapse p-3 text-light">
-                                <p> Men, Women and Children Cuts<br/> Blow Drying and Styling<br/> Braids<br/> Wig Attachments</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card bg-success" style="width:200px">
-                        <img className="card-img-top" src={monic} alt="Card image" style="width:100%; "/>
-                        <div className="card-body">
-                            <h4 class="card-title">Monique</h4>
-                            <p class="card-text">Her hair styling is as unique as her name.</p>
-                            <a href="#profile" class="btn btn-primary" data-toggle="collapse">Areas of Expertise</a>
-                            <div id="profile" className="collapse p-3 text-light">
-                                <p> Straightening and Curling<br/> Blow Drying and Styling<br/> Braids<br/> Wig Attachments and Extensions<br/> Hair Coloring</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </div>*/}
+            
     </div>
     )
 }

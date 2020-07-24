@@ -6,68 +6,61 @@ i18n.use(LanguageDetector).init({
   resources: {
     en: {
       translations: {
-        OurExpertise: "Our Expertise",
-        "is an internationalization-framework which offers a complete solution to localize your product from web to mobile and desktop":
-          "is an internationalization-framework which offers a complete solution to localize your product from web to mobile and desktop",
-        "Plugins to detect the user language":
-          "Plugins to detect the user language",
-        "Plugins to load translations": "Plugins to load translations",
-        "Optionally cache the translations":
-          "Optionally cache the translations",
-        Advantages: "Advantages",
-        "Flexibility to use other packages": "Flexibility to use other packages"
-      }
-    },
-    fr: {
-      translations: {
-        OurExpertise: "前書き",
-        "is an internationalization-framework which offers a complete solution to localize your product from web to mobile and desktop":
-          "Webからモバイルとデスクトップに製品をローカライズするための完全なソリューションを提供する国際化フレームワークです",
-        "Plugins to detect the user language":
-          "ユーザー言語を検出するためのプラグイン",
-        "Plugins to load translations": "翻訳をロードするためのプラグイン",
-        "Optionally cache the translations": "必要に応じて翻訳をキャッシュする",
-        Advantages: "利点",
-        "Flexibility to use other packages": "他のパッケージを使用する柔軟性"
+        Welcome: "Welcome to Kulture Salon",
+        "We're here for all your hair needs!":
+          "We're here for all your hair needs!",
+        Language: "Choose Preferred Language",
+        Expertise: "Our Expertise",
+        "We have highly-trained employees who are able to provide whatever hair style you need. Trained with different tools and hair types, they adapt very quickly to satisfy you hair needs.": 
+            "We have highly-trained employees who are able to provide whatever hair style you need. Trained with different tools and hair types, they adapt very quickly to satisfy you hair needs.",
+        Stylists: "Meet Our Hairdressers"
       }
     },
 
     spa: {
       translations: {
-        OurExpertise: "प्रस्तावना",
-        "is an internationalization-framework which offers a complete solution to localize your product from web to mobile and desktop":
-          "एक अंतर्राष्ट्रीयकरण - ढांचा है जो आपके उत्पाद को वेब से मोबाइल और डेस्कटॉप पर स्थानांतरित करने का एक संपूर्ण समाधान प्रदान करता है",
-        "Plugins to detect the user language":
-          "उपयोगकर्ता भाषा का पता लगाने के लिए प्लगइन्स",
-        "Plugins to load translations": "अनुवाद लोड करने के लिए प्लगइन्स",
-        "Optionally cache the translations": "वैकल्पिक रूप से अनुवाद कैश करें",
-        Advantages: "लाभ",
-        "Flexibility to use other packages":
-          "अन्य पैकेजों का उपयोग करने के लिए लचीलापन"
-      }
+        Welcome: "Bienvenido a Kulture Salon",
+        "We're here for all your hair needs!":
+          "¡Estamos aquí para todas tus necesidades de cabello!",
+        Language: "Elegir idioma preferido",
+        Expertise: "Nuestra Experiencia",
+        "We have highly-trained employees who are able to provide whatever hair style you need. Trained with different tools and hair types, they adapt very quickly to satisfy you hair needs.": 
+            "Tenemos empleados altamente capacitados que pueden proporcionar cualquier estilo de cabello que necesite. Formados con diferentes herramientas y tipos de cabello, se adaptan muy rápidamente para satisfacer sus necesidades de cabello.",
+        Stylists: "Conoce a nuestros peluqueros"
+
     }
-},
-
-    fallbackLng: "en",
-    debug: true,
-
-    // have a common namespace used around the full app
-    ns: ["translations"],
-    defaultNS: "translations",
-
-    keySeparator: false, // we use content as keys
-
-    interpolation: {
-        escapeValue: false, // not needed for react!!
-        formatSeparator: ","
     },
 
-    react: {
-        wait: true
+    fre: {
+        translations: {
+            Welcome: "Bienvenue a Kulture Salon",
+            "We're here for all your hair needs!":
+              "Nous sommes là pour tous vos besoins capillaires!",
+            Language: "Choisissez la langue préférée",
+            Expertise: "Nuestra Experiencia",
+            "We have highly-trained employees who are able to provide whatever hair style you need. Trained with different tools and hair types, they adapt very quickly to satisfy you hair needs.": 
+                "Nous avons des employés hautement qualifiés capables de vous fournir la coiffure dont vous avez besoin. Formés à différents outils et types de cheveux, ils s'adaptent très rapidement pour satisfaire vos besoins capillaires.",
+            Stylists: "Rencontrez nos coiffeurs"
+        }
     }
+  },
+  fallbackLng: "en",
+  debug: true,
 
-    }
+  // have a common namespace used around the full app
+  ns: ["translations"],
+  defaultNS: "translations",
 
-);
+  keySeparator: false, // we use content as keys
+
+  interpolation: {
+    escapeValue: false, // not needed for react!!
+    formatSeparator: ","
+  },
+
+  react: {
+    wait: true
+  }
+});
 
 export default i18n;
